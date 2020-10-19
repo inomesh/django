@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %} Product detail {% endblock %}
+
+{% block body %}
+
+<h1> product id {{object.id}} details are:- </h1>
+
+<h3> {{object.title}} </h3>
+{% include "products/detail_snippet.html" with product=object%}
+<h6> {{object.price}} </h6>
+
+{% endblock %}
